@@ -1,0 +1,14 @@
+[
+{
+  "directory": "C:/Users/Ayush Khanal/AI-ML_Framework/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/myproject.dir/includes_CXX.rsp -g -std=gnu++1z -o CMakeFiles\\myproject.dir\\src\\main.cpp.obj -c \"C:\\Users\\Ayush Khanal\\AI-ML_Framework\\src\\main.cpp\"",
+  "file": "C:/Users/Ayush Khanal/AI-ML_Framework/src/main.cpp",
+  "output": "CMakeFiles/myproject.dir/src/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/Ayush Khanal/AI-ML_Framework/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/myproject.dir/includes_CXX.rsp -g -std=gnu++1z -o CMakeFiles\\myproject.dir\\src\\matrix.cpp.obj -c \"C:\\Users\\Ayush Khanal\\AI-ML_Framework\\src\\matrix.cpp\"",
+  "file": "C:/Users/Ayush Khanal/AI-ML_Framework/src/matrix.cpp",
+  "output": "CMakeFiles/myproject.dir/src/matrix.cpp.obj"
+}
+]
