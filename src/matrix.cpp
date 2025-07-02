@@ -141,6 +141,16 @@ void matrix::applyfunction(double (*f)(double), double value)
         }
     }
 }
+void matrix:: operator*(double scaler)
+{
+    for(int i = 0 ; i<rows; i++)
+    {
+        for(int j = 0 ; j<columns ; j++)
+        {
+            data[i][j]*=scaler;
+        }
+    }
+}
 void matrix:: display()
 {
     for(int i = 0; i<rows ; i++)
