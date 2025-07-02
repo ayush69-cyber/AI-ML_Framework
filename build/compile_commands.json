@@ -10,5 +10,17 @@
   "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/myproject.dir/includes_CXX.rsp -g -std=gnu++1z -o CMakeFiles\\myproject.dir\\src\\matrix.cpp.obj -c \"C:\\Users\\Ayush Khanal\\AI-ML_Framework\\src\\matrix.cpp\"",
   "file": "C:/Users/Ayush Khanal/AI-ML_Framework/src/matrix.cpp",
   "output": "CMakeFiles/myproject.dir/src/matrix.cpp.obj"
+},
+{
+  "directory": "C:/Users/Ayush Khanal/AI-ML_Framework/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/myproject.dir/includes_CXX.rsp -g -std=gnu++1z -o CMakeFiles\\myproject.dir\\src\\Network.cpp.obj -c \"C:\\Users\\Ayush Khanal\\AI-ML_Framework\\src\\Network.cpp\"",
+  "file": "C:/Users/Ayush Khanal/AI-ML_Framework/src/Network.cpp",
+  "output": "CMakeFiles/myproject.dir/src/Network.cpp.obj"
+},
+{
+  "directory": "C:/Users/Ayush Khanal/AI-ML_Framework/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/myproject.dir/includes_CXX.rsp -g -std=gnu++1z -o CMakeFiles\\myproject.dir\\src\\vector.cpp.obj -c \"C:\\Users\\Ayush Khanal\\AI-ML_Framework\\src\\vector.cpp\"",
+  "file": "C:/Users/Ayush Khanal/AI-ML_Framework/src/vector.cpp",
+  "output": "CMakeFiles/myproject.dir/src/vector.cpp.obj"
 }
 ]

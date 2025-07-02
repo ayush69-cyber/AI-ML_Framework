@@ -11,4 +11,6 @@ include_directories(
 add_executable(myproject
     src/main.cpp 
     src/matrix.cpp
+    src/Network.cpp
+    src/vector.cpp
 )

@@ -101,21 +101,55 @@ CMakeFiles/myproject.dir/src/matrix.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/myproject.dir/src/matrix.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Ayush Khanal\AI-ML_Framework\src\matrix.cpp" -o CMakeFiles\myproject.dir\src\matrix.cpp.s
 
+CMakeFiles/myproject.dir/src/Network.cpp.obj: CMakeFiles/myproject.dir/flags.make
+CMakeFiles/myproject.dir/src/Network.cpp.obj: CMakeFiles/myproject.dir/includes_CXX.rsp
+CMakeFiles/myproject.dir/src/Network.cpp.obj: C:/Users/Ayush\ Khanal/AI-ML_Framework/src/Network.cpp
+CMakeFiles/myproject.dir/src/Network.cpp.obj: CMakeFiles/myproject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Ayush Khanal\AI-ML_Framework\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/myproject.dir/src/Network.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myproject.dir/src/Network.cpp.obj -MF CMakeFiles\myproject.dir\src\Network.cpp.obj.d -o CMakeFiles\myproject.dir\src\Network.cpp.obj -c "C:\Users\Ayush Khanal\AI-ML_Framework\src\Network.cpp"
+
+CMakeFiles/myproject.dir/src/Network.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/myproject.dir/src/Network.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Ayush Khanal\AI-ML_Framework\src\Network.cpp" > CMakeFiles\myproject.dir\src\Network.cpp.i
+
+CMakeFiles/myproject.dir/src/Network.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/myproject.dir/src/Network.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Ayush Khanal\AI-ML_Framework\src\Network.cpp" -o CMakeFiles\myproject.dir\src\Network.cpp.s
+
+CMakeFiles/myproject.dir/src/vector.cpp.obj: CMakeFiles/myproject.dir/flags.make
+CMakeFiles/myproject.dir/src/vector.cpp.obj: CMakeFiles/myproject.dir/includes_CXX.rsp
+CMakeFiles/myproject.dir/src/vector.cpp.obj: C:/Users/Ayush\ Khanal/AI-ML_Framework/src/vector.cpp
+CMakeFiles/myproject.dir/src/vector.cpp.obj: CMakeFiles/myproject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Ayush Khanal\AI-ML_Framework\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/myproject.dir/src/vector.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myproject.dir/src/vector.cpp.obj -MF CMakeFiles\myproject.dir\src\vector.cpp.obj.d -o CMakeFiles\myproject.dir\src\vector.cpp.obj -c "C:\Users\Ayush Khanal\AI-ML_Framework\src\vector.cpp"
+
+CMakeFiles/myproject.dir/src/vector.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/myproject.dir/src/vector.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Ayush Khanal\AI-ML_Framework\src\vector.cpp" > CMakeFiles\myproject.dir\src\vector.cpp.i
+
+CMakeFiles/myproject.dir/src/vector.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/myproject.dir/src/vector.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Ayush Khanal\AI-ML_Framework\src\vector.cpp" -o CMakeFiles\myproject.dir\src\vector.cpp.s
+
 # Object files for target myproject
 myproject_OBJECTS = \
 "CMakeFiles/myproject.dir/src/main.cpp.obj" \
-"CMakeFiles/myproject.dir/src/matrix.cpp.obj"
+"CMakeFiles/myproject.dir/src/matrix.cpp.obj" \
+"CMakeFiles/myproject.dir/src/Network.cpp.obj" \
+"CMakeFiles/myproject.dir/src/vector.cpp.obj"
 
 # External object files for target myproject
 myproject_EXTERNAL_OBJECTS =
 
 myproject.exe: CMakeFiles/myproject.dir/src/main.cpp.obj
 myproject.exe: CMakeFiles/myproject.dir/src/matrix.cpp.obj
+myproject.exe: CMakeFiles/myproject.dir/src/Network.cpp.obj
+myproject.exe: CMakeFiles/myproject.dir/src/vector.cpp.obj
 myproject.exe: CMakeFiles/myproject.dir/build.make
 myproject.exe: CMakeFiles/myproject.dir/linkLibs.rsp
 myproject.exe: CMakeFiles/myproject.dir/objects1.rsp
 myproject.exe: CMakeFiles/myproject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\Ayush Khanal\AI-ML_Framework\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable myproject.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\Ayush Khanal\AI-ML_Framework\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable myproject.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\myproject.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -1,9 +1,10 @@
 #pragma once
 class matrix {
-public:
+protected:
   int rows, columns;
   double **data;
-
+public:
+  matrix();
   matrix(int, int);
   matrix(const matrix &other);
   ~matrix();
@@ -12,6 +13,7 @@ public:
   matrix transpose() const;
   matrix operator+(const matrix &other) const;
   matrix operator*(const matrix &other) const;
+  int det();
   double sigmoid(double value);
   void applyfunction(double (*f)(double), double value);
 

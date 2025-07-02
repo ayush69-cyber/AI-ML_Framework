@@ -1,5 +1,5 @@
-CMakeFiles/myproject.dir/src/main.cpp.obj: \
- C:\Users\Ayush\ Khanal\AI-ML_Framework\src\main.cpp \
+CMakeFiles/myproject.dir/src/Network.cpp.obj: \
+ C:\Users\Ayush\ Khanal\AI-ML_Framework\src\Network.cpp \
  C:/Users/AYUSHK~1/AI-ML_~1/include/Network.hpp \
  C:/Users/AYUSHK~1/AI-ML_~1/include/matrix.hpp \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream \
@@ -107,5 +107,4 @@ CMakeFiles/myproject.dir/src/main.cpp.obj: \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_uninitialized.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_bvector.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\vector.tcc \
- C:/Users/AYUSHK~1/AI-ML_~1/include/vector.hpp
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\vector.tcc

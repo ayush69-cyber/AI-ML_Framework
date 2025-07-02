@@ -1,6 +1,6 @@
-CMakeFiles/myproject.dir/src/main.cpp.obj: \
- C:\Users\Ayush\ Khanal\AI-ML_Framework\src\main.cpp \
- C:/Users/AYUSHK~1/AI-ML_~1/include/Network.hpp \
+CMakeFiles/myproject.dir/src/vector.cpp.obj: \
+ C:\Users\Ayush\ Khanal\AI-ML_Framework\src\vector.cpp \
+ C:/Users/AYUSHK~1/AI-ML_~1/include/vector.hpp \
  C:/Users/AYUSHK~1/AI-ML_~1/include/matrix.hpp \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\c++config.h \
@@ -101,11 +101,4 @@ CMakeFiles/myproject.dir/src/main.cpp.obj: \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_ios.tcc \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ostream.tcc \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\istream \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\istream.tcc \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\vector \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_construct.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_uninitialized.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_bvector.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\vector.tcc \
- C:/Users/AYUSHK~1/AI-ML_~1/include/vector.hpp
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\istream.tcc

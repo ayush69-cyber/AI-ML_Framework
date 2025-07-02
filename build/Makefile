@@ -128,6 +128,30 @@ myproject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\myproject.dir\build.make CMakeFiles/myproject.dir/build
 .PHONY : myproject/fast
 
+src/Network.obj: src/Network.cpp.obj
+.PHONY : src/Network.obj
+
+# target to build an object file
+src/Network.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myproject.dir\build.make CMakeFiles/myproject.dir/src/Network.cpp.obj
+.PHONY : src/Network.cpp.obj
+
+src/Network.i: src/Network.cpp.i
+.PHONY : src/Network.i
+
+# target to preprocess a source file
+src/Network.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myproject.dir\build.make CMakeFiles/myproject.dir/src/Network.cpp.i
+.PHONY : src/Network.cpp.i
+
+src/Network.s: src/Network.cpp.s
+.PHONY : src/Network.s
+
+# target to generate assembly for a file
+src/Network.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myproject.dir\build.make CMakeFiles/myproject.dir/src/Network.cpp.s
+.PHONY : src/Network.cpp.s
+
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
@@ -176,6 +200,30 @@ src/matrix.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\myproject.dir\build.make CMakeFiles/myproject.dir/src/matrix.cpp.s
 .PHONY : src/matrix.cpp.s
 
+src/vector.obj: src/vector.cpp.obj
+.PHONY : src/vector.obj
+
+# target to build an object file
+src/vector.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myproject.dir\build.make CMakeFiles/myproject.dir/src/vector.cpp.obj
+.PHONY : src/vector.cpp.obj
+
+src/vector.i: src/vector.cpp.i
+.PHONY : src/vector.i
+
+# target to preprocess a source file
+src/vector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myproject.dir\build.make CMakeFiles/myproject.dir/src/vector.cpp.i
+.PHONY : src/vector.cpp.i
+
+src/vector.s: src/vector.cpp.s
+.PHONY : src/vector.s
+
+# target to generate assembly for a file
+src/vector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myproject.dir\build.make CMakeFiles/myproject.dir/src/vector.cpp.s
+.PHONY : src/vector.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -185,12 +233,18 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... myproject
+	@echo ... src/Network.obj
+	@echo ... src/Network.i
+	@echo ... src/Network.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
 	@echo ... src/matrix.obj
 	@echo ... src/matrix.i
 	@echo ... src/matrix.s
+	@echo ... src/vector.obj
+	@echo ... src/vector.i
+	@echo ... src/vector.s
 .PHONY : help
 
 

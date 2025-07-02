@@ -17,6 +17,9 @@ void matrix::deallocatememory()
     }
     delete data;
 }
+matrix::matrix() : rows(1),columns(1){
+    data = NULL;
+}
 matrix::matrix(int r,int c) : rows(r),columns(c){
     allocatememory();
     fill(0.0);
@@ -89,6 +92,40 @@ matrix matrix::transpose()const
         }
     }
     return result;
+}
+int matrix::det()
+{
+    if(rows == 1 && columns== 1)
+            return (data[0][0]);
+        else if(rows == 2 && columns == 2)
+            return ((data[0][0] * data[1][1]) - (data[1][0]*data[0][1]));
+        else if(rows == columns)
+        {
+            matrix m(rows-1,columns-1);
+            int result = 0;
+            for(int i = 0; i<columns ; i++)
+            {
+                for(int j = 0; j<rows-1 ; j++)
+                {
+                    int c = 0;
+                    for(int k = 0 ; k < columns ; k++)
+                    {
+                        if(k!=i)
+                        {
+                            m.data[j][c] = data[j+1][k];
+                            c++;
+                        }
+                    }
+                }
+                result += (data[0][i] * m.det() * pow(-1,i));
+            }
+            return result;
+        }
+        else
+        {
+            std::cout << "Garbage Value Dimension error:" << std::endl;
+            return -1;
+        }
 }
 double matrix::sigmoid(double x)
 {
