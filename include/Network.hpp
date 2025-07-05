@@ -6,10 +6,10 @@
 class Network {
 
 public:
-  std::vector<matrix> layers;
+  std::vector<Matrix> layers;
   int size;
 
-  Network(std::vector<matrix> layers);
+  Network(std::vector<Matrix> layers);
 
   void print();
 };

@@ -1,12 +1,14 @@
+#pragma once
 #include "matrix.hpp"
-class Vector:public matrix
+class Vector : public Matrix
 {
-    protected:
+protected:
     int dimension;
-    public:
+public:
+    Vector();
     Vector(int n);
-    Vector(matrix);
-    Vector transform(matrix&);
+    Vector(Matrix);
+    Vector transform(Matrix&);
     double magnitude();
     void normalize();
     double dot(Vector&);
