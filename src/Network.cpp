@@ -1,6 +1,6 @@
 #include "Network.hpp"
 
-Network::Network(std::vector<matrix> layers) : layers(layers) {}
+Network::Network(std::vector<Matrix> layers) : layers(layers) {}
 
 void Network::print() {
 

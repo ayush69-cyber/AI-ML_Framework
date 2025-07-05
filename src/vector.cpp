@@ -1,9 +1,18 @@
 #include "vector.hpp"
 #include<cmath>
 #include<iostream>
-Vector::Vector(int n):matrix(n,1){}
-Vector::Vector(matrix mat):matrix(mat){}
-Vector Vector:: transform(matrix& other)
+Vector::Vector():Matrix(){}
+Vector::Vector(int n):Matrix(n,1){}
+Vector::Vector(Matrix mat):Matrix(mat.get_nofrows()*mat.get_nofcolumns(),1){
+    for(int i = 0; i<mat.get_nofrows();i++)
+    {
+        for(int j = 0 ; j < mat.get_nofcolumns(); j++)
+        {
+            data[i+j][0] = mat(i,j);
+        }
+    }
+}
+Vector Vector:: transform(Matrix& other)
 {
     return other*(*this);
 }

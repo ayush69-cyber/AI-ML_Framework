@@ -1,7 +1,8 @@
 #include "matrix.hpp"
 #include<cmath>
 #include<iostream>
-void matrix::allocatememory()
+
+void Matrix::allocatememory()
 {
     data = new double*[rows];
     for(int i = 0;i<rows;i++)
@@ -9,7 +10,7 @@ void matrix::allocatememory()
         data[i] = new double[columns];
     }
 }
-void matrix::deallocatememory()
+void Matrix::deallocatememory()
 {
     for(int i = 0; i<rows;i++)
     {
@@ -17,14 +18,14 @@ void matrix::deallocatememory()
     }
     delete data;
 }
-matrix::matrix() : rows(1),columns(1){
+Matrix::Matrix() : rows(0),columns(0){
     data = NULL;
 }
-matrix::matrix(int r,int c) : rows(r),columns(c){
+Matrix::Matrix(int r,int c) : rows(r),columns(c){
     allocatememory();
     fill(0.0);
 }
-matrix::matrix(const matrix& other):rows(other.rows), columns(other.columns)
+Matrix::Matrix(const Matrix& other):rows(other.rows), columns(other.columns)
 {
     allocatememory();
     for(int i = 0; i<rows; i++)
@@ -35,11 +36,11 @@ matrix::matrix(const matrix& other):rows(other.rows), columns(other.columns)
         }
     }
 }
-matrix::~matrix()
+Matrix::~Matrix()
 {
     deallocatememory();
 }
-void matrix::fill(double value)
+void Matrix::fill(double value)
 {
     for(int i = 0 ; i<rows ; i++)
     {
@@ -50,9 +51,22 @@ void matrix::fill(double value)
         }
     }
 }
-matrix matrix::operator+(const matrix& other) const
+void Matrix::random_fill(double min_val = -1 , double max_val = 1)
 {
-    matrix c(rows,columns);
+    std::srand(std::time(0)); // Seed the RNG once
+
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < columns; j++)
+        {
+            double r = static_cast<double>(std::rand()) / RAND_MAX; // [0,1]
+            data[i][j] = min_val + r * (max_val - min_val);         // Scale to [min_val, max_val]
+        }
+    }
+}
+Matrix Matrix::operator+(const Matrix& other) const
+{
+    Matrix c(rows,columns);
     for(int i = 0; i<rows; i++)
     {
         for(int j = 0; j<columns ; j++)
@@ -62,11 +76,11 @@ matrix matrix::operator+(const matrix& other) const
     }
     return c;
 }
-matrix matrix:: operator*(const matrix& other) const
+Matrix Matrix:: operator*(const Matrix& other) const
 {
     if(columns == other.rows)
     {
-    matrix c(rows,other.columns);
+    Matrix c(rows,other.columns);
     c.fill(0.0);
     for(int i = 0 ; i<rows ; i++ )
     {
@@ -81,9 +95,9 @@ matrix matrix:: operator*(const matrix& other) const
     return c;
     }
 }
-matrix matrix::transpose()const
+Matrix Matrix::transpose()const
 {
-    matrix result(columns,rows);
+    Matrix result(columns,rows);
     for(int i = 0; i<columns ;i++)
     {
         for(int j = 0; j<rows ; j++)
@@ -93,7 +107,7 @@ matrix matrix::transpose()const
     }
     return result;
 }
-int matrix::det()
+double Matrix::det()
 {
     if(rows == 1 && columns== 1)
             return (data[0][0]);
@@ -101,8 +115,8 @@ int matrix::det()
             return ((data[0][0] * data[1][1]) - (data[1][0]*data[0][1]));
         else if(rows == columns)
         {
-            matrix m(rows-1,columns-1);
-            int result = 0;
+            Matrix m(rows-1,columns-1);
+            double result = 0;
             for(int i = 0; i<columns ; i++)
             {
                 for(int j = 0; j<rows-1 ; j++)
@@ -127,11 +141,11 @@ int matrix::det()
             return -1;
         }
 }
-double matrix::sigmoid(double x)
+double Matrix::sigmoid(double x)
 {
     return 1 / (1 + exp(-x));
 }
-void matrix::applyfunction(double (*f)(double), double value)
+void Matrix::applyfunction(double (*f)(double), double value)
 {
     for(int i = 0; i<rows ; i++)
     {
@@ -141,17 +155,65 @@ void matrix::applyfunction(double (*f)(double), double value)
         }
     }
 }
-void matrix:: operator*(double scaler)
+Matrix Matrix:: operator*(double scaler)
 {
+    Matrix temp = *this;
     for(int i = 0 ; i<rows; i++)
     {
         for(int j = 0 ; j<columns ; j++)
         {
-            data[i][j]*=scaler;
+            temp.data[i][j]*=scaler;
         }
     }
+    return temp;
 }
-void matrix:: display()
+double Matrix:: operator()(int rowindex,int columnindex)
+{
+    return data[rowindex][columnindex];
+}
+void Matrix:: operator()(int rowindex , int columnindex , double value)
+{
+    data[rowindex][columnindex]= value;
+}
+Matrix Matrix::get_row(int n)
+{
+    Matrix m(1,columns);
+    for(int i = 0; i <columns ; i++)
+    {
+        m.data[0][i] = data[n][i];
+    }
+    return m;
+}
+Matrix Matrix::get_column(int n)
+{
+    Matrix m(rows,1);
+    for(int i = 0; i <rows ; i++)
+    {
+        m.data[i][0] = data[i][n];
+    }
+    return m;
+}
+void Matrix::set_row(int n , Matrix& row)
+{
+    if(row.rows*row.columns != columns)
+    {
+        std:: cout << "Dimension Error" << '\n';
+        return;
+    }
+    for(int i = 0; i < columns ; i++)
+    {
+        data[n][i] = (row.rows == 1)?row.data[0][i]:row.data[i][0];
+    }
+}
+int Matrix :: get_nofrows()
+{
+    return rows;
+}
+int Matrix :: get_nofcolumns()
+{
+    return columns;
+}
+void Matrix:: display()
 {
     for(int i = 0; i<rows ; i++)
     {
