@@ -2,10 +2,17 @@ CMakeFiles/myproject.dir/src/Network.cpp.obj: \
  C:\Users\Ayush\ Khanal\AI-ML_Framework\src\Network.cpp \
  C:/Users/AYUSHK~1/AI-ML_~1/include/Network.hpp \
  C:/Users/AYUSHK~1/AI-ML_~1/include/matrix.hpp \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cstdlib \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\c++config.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\os_defines.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\cpu_defines.h \
+ c:\mingw\include\stdlib.h c:\mingw\include\_mingw.h \
+ c:\mingw\include\msvcrtver.h c:\mingw\include\w32api.h \
+ c:\mingw\include\sdkddkver.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\stddef.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ctime c:\mingw\include\time.h \
+ c:\mingw\include\sys\types.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iosfwd \
@@ -13,12 +20,8 @@ CMakeFiles/myproject.dir/src/Network.cpp.obj: \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\memoryfwd.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\postypes.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cwchar \
- c:\mingw\include\wchar.h c:\mingw\include\_mingw.h \
- c:\mingw\include\msvcrtver.h c:\mingw\include\w32api.h \
- c:\mingw\include\sdkddkver.h c:\mingw\include\wctype.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\stddef.h \
- c:\mingw\include\sys\types.h c:\mingw\include\stdio.h \
- c:\mingw\include\sys/types.h \
+ c:\mingw\include\wchar.h c:\mingw\include\wctype.h \
+ c:\mingw\include\stdio.h c:\mingw\include\sys/types.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\stdarg.h \
  c:\mingw\include\stdlib.h c:\mingw\include\direct.h \
  c:\mingw\include\sys/stat.h c:\mingw\include\io.h \
@@ -77,8 +80,6 @@ CMakeFiles/myproject.dir/src/Network.cpp.obj: \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ext\alloc_traits.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\alloc_traits.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ext\string_conversions.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cstdlib \
- c:\mingw\include\stdlib.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cstdio \
  c:\mingw\include\stdio.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cerrno \

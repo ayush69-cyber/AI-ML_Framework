@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/myproject.dir/src/Network.cpp.obj"
   "CMakeFiles/myproject.dir/src/Network.cpp.obj.d"
+  "CMakeFiles/myproject.dir/src/lin_regression.cpp.obj"
+  "CMakeFiles/myproject.dir/src/lin_regression.cpp.obj.d"
   "CMakeFiles/myproject.dir/src/main.cpp.obj"
   "CMakeFiles/myproject.dir/src/main.cpp.obj.d"
   "CMakeFiles/myproject.dir/src/matrix.cpp.obj"

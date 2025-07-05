@@ -1,6 +1,7 @@
-CMakeFiles/myproject.dir/src/main.cpp.obj: \
- C:\Users\Ayush\ Khanal\AI-ML_Framework\src\main.cpp \
- C:/Users/AYUSHK~1/AI-ML_~1/include/Network.hpp \
+CMakeFiles/myproject.dir/src/lin_regression.cpp.obj: \
+ C:\Users\Ayush\ Khanal\AI-ML_Framework\src\lin_regression.cpp \
+ C:/Users/AYUSHK~1/AI-ML_~1/include/lin_regression.hpp \
+ C:/Users/AYUSHK~1/AI-ML_~1/include/vector.hpp \
  C:/Users/AYUSHK~1/AI-ML_~1/include/matrix.hpp \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cstdlib \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\c++config.h \
@@ -103,11 +104,4 @@ CMakeFiles/myproject.dir/src/main.cpp.obj: \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ostream.tcc \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\istream \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\istream.tcc \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\vector \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_construct.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_uninitialized.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_bvector.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\vector.tcc \
- C:/Users/AYUSHK~1/AI-ML_~1/include/vector.hpp \
- C:/Users/AYUSHK~1/AI-ML_~1/include/lin_regression.hpp
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cmath c:\mingw\include\math.h

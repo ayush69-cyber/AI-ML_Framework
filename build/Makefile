@@ -152,6 +152,30 @@ src/Network.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\myproject.dir\build.make CMakeFiles/myproject.dir/src/Network.cpp.s
 .PHONY : src/Network.cpp.s
 
+src/lin_regression.obj: src/lin_regression.cpp.obj
+.PHONY : src/lin_regression.obj
+
+# target to build an object file
+src/lin_regression.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myproject.dir\build.make CMakeFiles/myproject.dir/src/lin_regression.cpp.obj
+.PHONY : src/lin_regression.cpp.obj
+
+src/lin_regression.i: src/lin_regression.cpp.i
+.PHONY : src/lin_regression.i
+
+# target to preprocess a source file
+src/lin_regression.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myproject.dir\build.make CMakeFiles/myproject.dir/src/lin_regression.cpp.i
+.PHONY : src/lin_regression.cpp.i
+
+src/lin_regression.s: src/lin_regression.cpp.s
+.PHONY : src/lin_regression.s
+
+# target to generate assembly for a file
+src/lin_regression.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myproject.dir\build.make CMakeFiles/myproject.dir/src/lin_regression.cpp.s
+.PHONY : src/lin_regression.cpp.s
+
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
@@ -236,6 +260,9 @@ help:
 	@echo ... src/Network.obj
 	@echo ... src/Network.i
 	@echo ... src/Network.s
+	@echo ... src/lin_regression.obj
+	@echo ... src/lin_regression.i
+	@echo ... src/lin_regression.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
