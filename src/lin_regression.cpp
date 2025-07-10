@@ -37,7 +37,7 @@ Matrix LinearRegression::predict(Matrix &X)
 }
 Vector LinearRegression :: compute_mse(Matrix &y_pred, Matrix& y_true)
 {
-    Matrix errmatrix = y_true + y_pred*-1;
+    Matrix errmatrix = y_true + (y_pred*-1);
     Vector error(errmatrix.get_nofcolumns());
     double err;
     for(int i = 0; i < errmatrix.get_nofcolumns(); i++)
@@ -60,17 +60,25 @@ void LinearRegression :: train(Matrix& X, Matrix& y_true , int epoch)
         Matrix y_predict = predict(X);
         Matrix error = y_predict + (y_true*-1);
         Matrix dw = (X.transpose()*error) * (2.0/X.get_nofrows());
+        // std::cout << "dw:\n";
+        // dw.display();
         Vector db(y_predict.get_nofcolumns());
+        // std::cout << "db rows: " << db.get_nofrows() << ", db cols: " << db.get_nofcolumns() << '\n';
         for(int j = 0; j<error.get_nofcolumns() ; j++)
         {
             double sum = 0;
             for(int k = 0 ; k<error.get_nofrows() ; k++)
             {
                 sum += error(k,j);
+                // std::cout << "Sum: " << sum << '\n';
             }
             db(j,0,sum);
+            // std::cout << "Bias: " << db(j,0) << '\n';
         }
-        weights = weights + (dw * -learning_rate);
-        bias = bias + (db*-learning_rate);
+        weights = weights + (dw * learning_rate * -1);
+        // std::cout<<"Weight : \n";
+        // weights.display();
+        bias = Vector(bias + (db * learning_rate * -1));
+        // bias.display();
     }
 }
