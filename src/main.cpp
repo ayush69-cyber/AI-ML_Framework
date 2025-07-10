@@ -7,6 +7,8 @@
 int main() {
   LinearRegression lr(2,2,2,0.01);
   Matrix X(2,2);
+  
+  
   X.random_fill(1,4);
   std:: cout << "X datas:\n" ;
   X.display();
@@ -14,6 +16,8 @@ int main() {
   Y_true.random_fill(1,5);
   std::cout << "Y_true datas:\n" ;
   Y_true.display();
+  std::cout<<"Rank: "<<X.rank()<<std::endl;
+  
   Matrix Y_predict = lr.predict(X);
   std::cout << "Y_predict datas (Before training):\n" ;
   Y_predict.display();

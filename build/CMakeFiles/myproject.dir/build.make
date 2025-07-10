@@ -43,19 +43,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\CMake\bin\cmake.exe"
+CMAKE_COMMAND = C:\Users\Acer\Downloads\cmake-4.0.1-windows-x86_64\cmake-4.0.1-windows-x86_64\bin\cmake.exe
 
 # The command to remove a file.
-RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
+RM = C:\Users\Acer\Downloads\cmake-4.0.1-windows-x86_64\cmake-4.0.1-windows-x86_64\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Ayush Khanal\AI-ML_Framework"
+CMAKE_SOURCE_DIR = C:\Users\Acer\Desktop\AI-ML_Framework
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Ayush Khanal\AI-ML_Framework\build"
+CMAKE_BINARY_DIR = C:\Users\Acer\Desktop\AI-ML_Framework\build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/myproject.dir/depend.make
@@ -73,78 +73,78 @@ CMakeFiles/myproject.dir/codegen:
 
 CMakeFiles/myproject.dir/src/main.cpp.obj: CMakeFiles/myproject.dir/flags.make
 CMakeFiles/myproject.dir/src/main.cpp.obj: CMakeFiles/myproject.dir/includes_CXX.rsp
-CMakeFiles/myproject.dir/src/main.cpp.obj: C:/Users/Ayush\ Khanal/AI-ML_Framework/src/main.cpp
+CMakeFiles/myproject.dir/src/main.cpp.obj: C:/Users/Acer/Desktop/AI-ML_Framework/src/main.cpp
 CMakeFiles/myproject.dir/src/main.cpp.obj: CMakeFiles/myproject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Ayush Khanal\AI-ML_Framework\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/myproject.dir/src/main.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myproject.dir/src/main.cpp.obj -MF CMakeFiles\myproject.dir\src\main.cpp.obj.d -o CMakeFiles\myproject.dir\src\main.cpp.obj -c "C:\Users\Ayush Khanal\AI-ML_Framework\src\main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Acer\Desktop\AI-ML_Framework\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/myproject.dir/src/main.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myproject.dir/src/main.cpp.obj -MF CMakeFiles\myproject.dir\src\main.cpp.obj.d -o CMakeFiles\myproject.dir\src\main.cpp.obj -c C:\Users\Acer\Desktop\AI-ML_Framework\src\main.cpp
 
 CMakeFiles/myproject.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/myproject.dir/src/main.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Ayush Khanal\AI-ML_Framework\src\main.cpp" > CMakeFiles\myproject.dir\src\main.cpp.i
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Acer\Desktop\AI-ML_Framework\src\main.cpp > CMakeFiles\myproject.dir\src\main.cpp.i
 
 CMakeFiles/myproject.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/myproject.dir/src/main.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Ayush Khanal\AI-ML_Framework\src\main.cpp" -o CMakeFiles\myproject.dir\src\main.cpp.s
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Acer\Desktop\AI-ML_Framework\src\main.cpp -o CMakeFiles\myproject.dir\src\main.cpp.s
 
 CMakeFiles/myproject.dir/src/matrix.cpp.obj: CMakeFiles/myproject.dir/flags.make
 CMakeFiles/myproject.dir/src/matrix.cpp.obj: CMakeFiles/myproject.dir/includes_CXX.rsp
-CMakeFiles/myproject.dir/src/matrix.cpp.obj: C:/Users/Ayush\ Khanal/AI-ML_Framework/src/matrix.cpp
+CMakeFiles/myproject.dir/src/matrix.cpp.obj: C:/Users/Acer/Desktop/AI-ML_Framework/src/matrix.cpp
 CMakeFiles/myproject.dir/src/matrix.cpp.obj: CMakeFiles/myproject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Ayush Khanal\AI-ML_Framework\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/myproject.dir/src/matrix.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myproject.dir/src/matrix.cpp.obj -MF CMakeFiles\myproject.dir\src\matrix.cpp.obj.d -o CMakeFiles\myproject.dir\src\matrix.cpp.obj -c "C:\Users\Ayush Khanal\AI-ML_Framework\src\matrix.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Acer\Desktop\AI-ML_Framework\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/myproject.dir/src/matrix.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myproject.dir/src/matrix.cpp.obj -MF CMakeFiles\myproject.dir\src\matrix.cpp.obj.d -o CMakeFiles\myproject.dir\src\matrix.cpp.obj -c C:\Users\Acer\Desktop\AI-ML_Framework\src\matrix.cpp
 
 CMakeFiles/myproject.dir/src/matrix.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/myproject.dir/src/matrix.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Ayush Khanal\AI-ML_Framework\src\matrix.cpp" > CMakeFiles\myproject.dir\src\matrix.cpp.i
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Acer\Desktop\AI-ML_Framework\src\matrix.cpp > CMakeFiles\myproject.dir\src\matrix.cpp.i
 
 CMakeFiles/myproject.dir/src/matrix.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/myproject.dir/src/matrix.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Ayush Khanal\AI-ML_Framework\src\matrix.cpp" -o CMakeFiles\myproject.dir\src\matrix.cpp.s
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Acer\Desktop\AI-ML_Framework\src\matrix.cpp -o CMakeFiles\myproject.dir\src\matrix.cpp.s
 
 CMakeFiles/myproject.dir/src/Network.cpp.obj: CMakeFiles/myproject.dir/flags.make
 CMakeFiles/myproject.dir/src/Network.cpp.obj: CMakeFiles/myproject.dir/includes_CXX.rsp
-CMakeFiles/myproject.dir/src/Network.cpp.obj: C:/Users/Ayush\ Khanal/AI-ML_Framework/src/Network.cpp
+CMakeFiles/myproject.dir/src/Network.cpp.obj: C:/Users/Acer/Desktop/AI-ML_Framework/src/Network.cpp
 CMakeFiles/myproject.dir/src/Network.cpp.obj: CMakeFiles/myproject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Ayush Khanal\AI-ML_Framework\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/myproject.dir/src/Network.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myproject.dir/src/Network.cpp.obj -MF CMakeFiles\myproject.dir\src\Network.cpp.obj.d -o CMakeFiles\myproject.dir\src\Network.cpp.obj -c "C:\Users\Ayush Khanal\AI-ML_Framework\src\Network.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Acer\Desktop\AI-ML_Framework\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/myproject.dir/src/Network.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myproject.dir/src/Network.cpp.obj -MF CMakeFiles\myproject.dir\src\Network.cpp.obj.d -o CMakeFiles\myproject.dir\src\Network.cpp.obj -c C:\Users\Acer\Desktop\AI-ML_Framework\src\Network.cpp
 
 CMakeFiles/myproject.dir/src/Network.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/myproject.dir/src/Network.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Ayush Khanal\AI-ML_Framework\src\Network.cpp" > CMakeFiles\myproject.dir\src\Network.cpp.i
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Acer\Desktop\AI-ML_Framework\src\Network.cpp > CMakeFiles\myproject.dir\src\Network.cpp.i
 
 CMakeFiles/myproject.dir/src/Network.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/myproject.dir/src/Network.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Ayush Khanal\AI-ML_Framework\src\Network.cpp" -o CMakeFiles\myproject.dir\src\Network.cpp.s
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Acer\Desktop\AI-ML_Framework\src\Network.cpp -o CMakeFiles\myproject.dir\src\Network.cpp.s
 
 CMakeFiles/myproject.dir/src/vector.cpp.obj: CMakeFiles/myproject.dir/flags.make
 CMakeFiles/myproject.dir/src/vector.cpp.obj: CMakeFiles/myproject.dir/includes_CXX.rsp
-CMakeFiles/myproject.dir/src/vector.cpp.obj: C:/Users/Ayush\ Khanal/AI-ML_Framework/src/vector.cpp
+CMakeFiles/myproject.dir/src/vector.cpp.obj: C:/Users/Acer/Desktop/AI-ML_Framework/src/vector.cpp
 CMakeFiles/myproject.dir/src/vector.cpp.obj: CMakeFiles/myproject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Ayush Khanal\AI-ML_Framework\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/myproject.dir/src/vector.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myproject.dir/src/vector.cpp.obj -MF CMakeFiles\myproject.dir\src\vector.cpp.obj.d -o CMakeFiles\myproject.dir\src\vector.cpp.obj -c "C:\Users\Ayush Khanal\AI-ML_Framework\src\vector.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Acer\Desktop\AI-ML_Framework\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/myproject.dir/src/vector.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myproject.dir/src/vector.cpp.obj -MF CMakeFiles\myproject.dir\src\vector.cpp.obj.d -o CMakeFiles\myproject.dir\src\vector.cpp.obj -c C:\Users\Acer\Desktop\AI-ML_Framework\src\vector.cpp
 
 CMakeFiles/myproject.dir/src/vector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/myproject.dir/src/vector.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Ayush Khanal\AI-ML_Framework\src\vector.cpp" > CMakeFiles\myproject.dir\src\vector.cpp.i
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Acer\Desktop\AI-ML_Framework\src\vector.cpp > CMakeFiles\myproject.dir\src\vector.cpp.i
 
 CMakeFiles/myproject.dir/src/vector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/myproject.dir/src/vector.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Ayush Khanal\AI-ML_Framework\src\vector.cpp" -o CMakeFiles\myproject.dir\src\vector.cpp.s
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Acer\Desktop\AI-ML_Framework\src\vector.cpp -o CMakeFiles\myproject.dir\src\vector.cpp.s
 
 CMakeFiles/myproject.dir/src/lin_regression.cpp.obj: CMakeFiles/myproject.dir/flags.make
 CMakeFiles/myproject.dir/src/lin_regression.cpp.obj: CMakeFiles/myproject.dir/includes_CXX.rsp
-CMakeFiles/myproject.dir/src/lin_regression.cpp.obj: C:/Users/Ayush\ Khanal/AI-ML_Framework/src/lin_regression.cpp
+CMakeFiles/myproject.dir/src/lin_regression.cpp.obj: C:/Users/Acer/Desktop/AI-ML_Framework/src/lin_regression.cpp
 CMakeFiles/myproject.dir/src/lin_regression.cpp.obj: CMakeFiles/myproject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Ayush Khanal\AI-ML_Framework\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/myproject.dir/src/lin_regression.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myproject.dir/src/lin_regression.cpp.obj -MF CMakeFiles\myproject.dir\src\lin_regression.cpp.obj.d -o CMakeFiles\myproject.dir\src\lin_regression.cpp.obj -c "C:\Users\Ayush Khanal\AI-ML_Framework\src\lin_regression.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Acer\Desktop\AI-ML_Framework\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/myproject.dir/src/lin_regression.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myproject.dir/src/lin_regression.cpp.obj -MF CMakeFiles\myproject.dir\src\lin_regression.cpp.obj.d -o CMakeFiles\myproject.dir\src\lin_regression.cpp.obj -c C:\Users\Acer\Desktop\AI-ML_Framework\src\lin_regression.cpp
 
 CMakeFiles/myproject.dir/src/lin_regression.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/myproject.dir/src/lin_regression.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Ayush Khanal\AI-ML_Framework\src\lin_regression.cpp" > CMakeFiles\myproject.dir\src\lin_regression.cpp.i
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Acer\Desktop\AI-ML_Framework\src\lin_regression.cpp > CMakeFiles\myproject.dir\src\lin_regression.cpp.i
 
 CMakeFiles/myproject.dir/src/lin_regression.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/myproject.dir/src/lin_regression.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Ayush Khanal\AI-ML_Framework\src\lin_regression.cpp" -o CMakeFiles\myproject.dir\src\lin_regression.cpp.s
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Acer\Desktop\AI-ML_Framework\src\lin_regression.cpp -o CMakeFiles\myproject.dir\src\lin_regression.cpp.s
 
 # Object files for target myproject
 myproject_OBJECTS = \
@@ -166,7 +166,7 @@ myproject.exe: CMakeFiles/myproject.dir/build.make
 myproject.exe: CMakeFiles/myproject.dir/linkLibs.rsp
 myproject.exe: CMakeFiles/myproject.dir/objects1.rsp
 myproject.exe: CMakeFiles/myproject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\Ayush Khanal\AI-ML_Framework\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable myproject.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Acer\Desktop\AI-ML_Framework\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable myproject.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\myproject.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -178,6 +178,6 @@ CMakeFiles/myproject.dir/clean:
 .PHONY : CMakeFiles/myproject.dir/clean
 
 CMakeFiles/myproject.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\Ayush Khanal\AI-ML_Framework" "C:\Users\Ayush Khanal\AI-ML_Framework" "C:\Users\Ayush Khanal\AI-ML_Framework\build" "C:\Users\Ayush Khanal\AI-ML_Framework\build" "C:\Users\Ayush Khanal\AI-ML_Framework\build\CMakeFiles\myproject.dir\DependInfo.cmake" "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Acer\Desktop\AI-ML_Framework C:\Users\Acer\Desktop\AI-ML_Framework C:\Users\Acer\Desktop\AI-ML_Framework\build C:\Users\Acer\Desktop\AI-ML_Framework\build C:\Users\Acer\Desktop\AI-ML_Framework\build\CMakeFiles\myproject.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/myproject.dir/depend
 

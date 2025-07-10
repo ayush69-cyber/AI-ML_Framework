@@ -1,6 +1,7 @@
 #include "matrix.hpp"
 #include<cmath>
 #include<iostream>
+const float EPS=1e-9;
 
 void Matrix::allocatememory()
 {
@@ -213,6 +214,52 @@ int Matrix :: get_nofcolumns()
 {
     return columns;
 }
+int Matrix::rank() {
+    Matrix temp = *this;  
+    int rank = 0;
+    int noofrow = temp.get_nofrows();
+    int noofcol = temp.get_nofcolumns();
+
+    for (int col = 0, row = 0; col < noofcol && row < noofrow; col++) {
+        int pivot = row;
+
+    
+        for (int i = row; i < noofrow; i++) {
+            if (std::fabs(temp(i, col)) > std::fabs(temp(pivot, col))) {
+                pivot = i;
+            }
+        }
+
+        
+        if (std::fabs(temp(pivot, col)) < EPS)
+            continue;
+
+        if (pivot != row) {
+            for (int k = 0; k < noofcol; k++) {
+                double tmp = temp(row, k);
+                temp(row, k, temp(pivot, k));
+                temp(pivot, k, tmp);
+            }
+        }
+
+        for (int i = row + 1; i < noofrow; i++) {
+            double factor = temp(i, col) / temp(row, col);
+            for (int j = col; j < noofcol; j++) {
+                double newVal = temp(i, j) - factor * temp(row, j);
+                temp(i, j, newVal);
+            }
+        }
+
+        ++row;
+        ++rank;
+    }
+
+    return rank;
+}
+
+    
+
+
 void Matrix:: display()
 {
     for(int i = 0; i<rows ; i++)

@@ -45,14 +45,14 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu++1z"
+					"fragment" : "-std=gnu++17"
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 2,
-					"path" : "C:/Users/Ayush Khanal/AI-ML_Framework/include"
+					"path" : "C:/Users/Acer/Desktop/AI-ML_Framework/include"
 				}
 			],
 			"language" : "CXX",
@@ -79,10 +79,6 @@
 	{
 		"commandFragments" : 
 		[
-			{
-				"fragment" : "-g",
-				"role" : "flags"
-			},
 			{
 				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
 				"role" : "libraries"

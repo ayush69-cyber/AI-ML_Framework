@@ -22,6 +22,7 @@ public:
   Matrix get_column(int n);
   int get_nofrows();
   int get_nofcolumns();
+  int rank();
   void set_row(int n, Matrix &row);
   Matrix operator*(double scalar);
   double det();
