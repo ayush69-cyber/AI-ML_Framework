@@ -16,7 +16,7 @@ void Matrix::deallocatememory()
     {
         delete[] data[i];
     }
-    delete data;
+    delete[] data;
 }
 Matrix::Matrix() : rows(0),columns(0){
     data = NULL;
@@ -78,10 +78,10 @@ Matrix Matrix::operator+(const Matrix& other) const
 }
 Matrix Matrix:: operator*(const Matrix& other) const
 {
-    if(columns == other.rows)
-    {
     Matrix c(rows,other.columns);
     c.fill(0.0);
+    if(columns == other.rows)
+    {
     for(int i = 0 ; i<rows ; i++ )
     {
         for(int j = 0 ; j < other.columns; j++)
@@ -92,8 +92,33 @@ Matrix Matrix:: operator*(const Matrix& other) const
             }
         }
     }
-    return c;
     }
+    else
+    {
+        std::cout << "Dimension Error" << std::endl;
+    }
+    return c;
+}
+Matrix& Matrix::operator=(const Matrix& other) {
+    if (this != &other) {
+        // Deallocate old memory
+        deallocatememory();
+
+        // Copy dimensions
+        rows = other.rows;
+        columns = other.columns;
+
+        // Allocate new memory
+        allocatememory();
+
+        // Copy data
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < columns; j++) {
+                data[i][j] = other.data[i][j];
+            }
+        }
+    }
+    return *this;
 }
 Matrix Matrix::transpose()const
 {
