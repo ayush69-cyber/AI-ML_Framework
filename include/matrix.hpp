@@ -16,6 +16,7 @@ public:
   Matrix transpose() const;
   Matrix operator+(const Matrix &other) const;
   Matrix operator*(const Matrix &other) const;
+  Matrix& operator=(const Matrix &other);
   double operator()(int rowindex,int columnindex);
   void operator()(int rowindex,int columnindex , double data);
   Matrix get_row(int n);
