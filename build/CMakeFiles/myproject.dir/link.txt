@@ -1,3 +1,1 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\myproject.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\myproject.dir/objects.a @CMakeFiles\myproject.dir\objects1.rsp
-C:\MinGW\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\myproject.dir/objects.a -Wl,--no-whole-archive -o myproject.exe -Wl,--out-implib,libmyproject.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\myproject.dir\linkLibs.rsp
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/myproject.dir/link.d CMakeFiles/myproject.dir/src/main.cpp.o CMakeFiles/myproject.dir/src/matrix.cpp.o CMakeFiles/myproject.dir/src/Network.cpp.o CMakeFiles/myproject.dir/src/vector.cpp.o CMakeFiles/myproject.dir/src/lin_regression.cpp.o -o myproject
