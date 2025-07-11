@@ -13,4 +13,5 @@ add_executable(myproject
     src/matrix.cpp
     src/Network.cpp
     src/vector.cpp
+    src/lin_regression.cpp
 )
