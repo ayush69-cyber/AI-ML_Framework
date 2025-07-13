@@ -142,13 +142,43 @@ CMakeFiles/myproject.dir/src/lin_regression.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/myproject.dir/src/lin_regression.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ayush_don/Desktop/AI-ML_Framework/src/lin_regression.cpp -o CMakeFiles/myproject.dir/src/lin_regression.cpp.s
 
+CMakeFiles/myproject.dir/src/log_regression.cpp.o: CMakeFiles/myproject.dir/flags.make
+CMakeFiles/myproject.dir/src/log_regression.cpp.o: /home/ayush_don/Desktop/AI-ML_Framework/src/log_regression.cpp
+CMakeFiles/myproject.dir/src/log_regression.cpp.o: CMakeFiles/myproject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ayush_don/Desktop/AI-ML_Framework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/myproject.dir/src/log_regression.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myproject.dir/src/log_regression.cpp.o -MF CMakeFiles/myproject.dir/src/log_regression.cpp.o.d -o CMakeFiles/myproject.dir/src/log_regression.cpp.o -c /home/ayush_don/Desktop/AI-ML_Framework/src/log_regression.cpp
+
+CMakeFiles/myproject.dir/src/log_regression.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/myproject.dir/src/log_regression.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ayush_don/Desktop/AI-ML_Framework/src/log_regression.cpp > CMakeFiles/myproject.dir/src/log_regression.cpp.i
+
+CMakeFiles/myproject.dir/src/log_regression.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/myproject.dir/src/log_regression.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ayush_don/Desktop/AI-ML_Framework/src/log_regression.cpp -o CMakeFiles/myproject.dir/src/log_regression.cpp.s
+
+CMakeFiles/myproject.dir/src/function.cpp.o: CMakeFiles/myproject.dir/flags.make
+CMakeFiles/myproject.dir/src/function.cpp.o: /home/ayush_don/Desktop/AI-ML_Framework/src/function.cpp
+CMakeFiles/myproject.dir/src/function.cpp.o: CMakeFiles/myproject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ayush_don/Desktop/AI-ML_Framework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/myproject.dir/src/function.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myproject.dir/src/function.cpp.o -MF CMakeFiles/myproject.dir/src/function.cpp.o.d -o CMakeFiles/myproject.dir/src/function.cpp.o -c /home/ayush_don/Desktop/AI-ML_Framework/src/function.cpp
+
+CMakeFiles/myproject.dir/src/function.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/myproject.dir/src/function.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ayush_don/Desktop/AI-ML_Framework/src/function.cpp > CMakeFiles/myproject.dir/src/function.cpp.i
+
+CMakeFiles/myproject.dir/src/function.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/myproject.dir/src/function.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ayush_don/Desktop/AI-ML_Framework/src/function.cpp -o CMakeFiles/myproject.dir/src/function.cpp.s
+
 # Object files for target myproject
 myproject_OBJECTS = \
 "CMakeFiles/myproject.dir/src/main.cpp.o" \
 "CMakeFiles/myproject.dir/src/matrix.cpp.o" \
 "CMakeFiles/myproject.dir/src/Network.cpp.o" \
 "CMakeFiles/myproject.dir/src/vector.cpp.o" \
-"CMakeFiles/myproject.dir/src/lin_regression.cpp.o"
+"CMakeFiles/myproject.dir/src/lin_regression.cpp.o" \
+"CMakeFiles/myproject.dir/src/log_regression.cpp.o" \
+"CMakeFiles/myproject.dir/src/function.cpp.o"
 
 # External object files for target myproject
 myproject_EXTERNAL_OBJECTS =
@@ -158,10 +188,12 @@ myproject: CMakeFiles/myproject.dir/src/matrix.cpp.o
 myproject: CMakeFiles/myproject.dir/src/Network.cpp.o
 myproject: CMakeFiles/myproject.dir/src/vector.cpp.o
 myproject: CMakeFiles/myproject.dir/src/lin_regression.cpp.o
+myproject: CMakeFiles/myproject.dir/src/log_regression.cpp.o
+myproject: CMakeFiles/myproject.dir/src/function.cpp.o
 myproject: CMakeFiles/myproject.dir/build.make
 myproject: CMakeFiles/myproject.dir/compiler_depend.ts
 myproject: CMakeFiles/myproject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ayush_don/Desktop/AI-ML_Framework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable myproject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ayush_don/Desktop/AI-ML_Framework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable myproject"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/myproject.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

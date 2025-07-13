@@ -153,6 +153,30 @@ src/Network.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/myproject.dir/build.make CMakeFiles/myproject.dir/src/Network.cpp.s
 .PHONY : src/Network.cpp.s
 
+src/function.o: src/function.cpp.o
+.PHONY : src/function.o
+
+# target to build an object file
+src/function.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myproject.dir/build.make CMakeFiles/myproject.dir/src/function.cpp.o
+.PHONY : src/function.cpp.o
+
+src/function.i: src/function.cpp.i
+.PHONY : src/function.i
+
+# target to preprocess a source file
+src/function.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myproject.dir/build.make CMakeFiles/myproject.dir/src/function.cpp.i
+.PHONY : src/function.cpp.i
+
+src/function.s: src/function.cpp.s
+.PHONY : src/function.s
+
+# target to generate assembly for a file
+src/function.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myproject.dir/build.make CMakeFiles/myproject.dir/src/function.cpp.s
+.PHONY : src/function.cpp.s
+
 src/lin_regression.o: src/lin_regression.cpp.o
 .PHONY : src/lin_regression.o
 
@@ -176,6 +200,30 @@ src/lin_regression.s: src/lin_regression.cpp.s
 src/lin_regression.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/myproject.dir/build.make CMakeFiles/myproject.dir/src/lin_regression.cpp.s
 .PHONY : src/lin_regression.cpp.s
+
+src/log_regression.o: src/log_regression.cpp.o
+.PHONY : src/log_regression.o
+
+# target to build an object file
+src/log_regression.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myproject.dir/build.make CMakeFiles/myproject.dir/src/log_regression.cpp.o
+.PHONY : src/log_regression.cpp.o
+
+src/log_regression.i: src/log_regression.cpp.i
+.PHONY : src/log_regression.i
+
+# target to preprocess a source file
+src/log_regression.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myproject.dir/build.make CMakeFiles/myproject.dir/src/log_regression.cpp.i
+.PHONY : src/log_regression.cpp.i
+
+src/log_regression.s: src/log_regression.cpp.s
+.PHONY : src/log_regression.s
+
+# target to generate assembly for a file
+src/log_regression.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myproject.dir/build.make CMakeFiles/myproject.dir/src/log_regression.cpp.s
+.PHONY : src/log_regression.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -261,9 +309,15 @@ help:
 	@echo "... src/Network.o"
 	@echo "... src/Network.i"
 	@echo "... src/Network.s"
+	@echo "... src/function.o"
+	@echo "... src/function.i"
+	@echo "... src/function.s"
 	@echo "... src/lin_regression.o"
 	@echo "... src/lin_regression.i"
 	@echo "... src/lin_regression.s"
+	@echo "... src/log_regression.o"
+	@echo "... src/log_regression.i"
+	@echo "... src/log_regression.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
