@@ -3,6 +3,7 @@
 
 class LinearRegression
 {
+    protected:
     Matrix weights;
     Vector bias;
     double learning_rate;
@@ -11,7 +12,7 @@ class LinearRegression
     void assign_weight(Matrix&);
     void assign_bias(Vector&);
     Vector predict(Vector&);
-    Matrix predict(Matrix&);
+    virtual Matrix predict(Matrix&);
     Vector compute_mse(Matrix&, Matrix& y);
-    void train(Matrix& , Matrix& , int);
+    virtual void train(Matrix& , Matrix& , int);
 };

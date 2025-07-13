@@ -26,12 +26,12 @@ public:
   void set_row(int n, Matrix &row);
   Matrix operator*(double scalar);
   double det();
-  double sigmoid(double value);
-  void applyfunction(double (*f)(double), double value);
+  
+  void applyfunction(double (*f)(double));
 
   void display();
 
-private:
+protected:
   void allocatememory();
   void deallocatememory();
 };
