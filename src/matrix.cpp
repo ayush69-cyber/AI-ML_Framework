@@ -191,18 +191,12 @@ double Matrix::det()
     }
 }
 
-// Sigmoid activation function
-double Matrix::sigmoid(double x)
-{
-    return 1 / (1 + exp(-x));
-}
-
 // Applies a function to each element of the matrix
-void Matrix::applyfunction(double (*f)(double), double value)
+void Matrix::applyfunction(double (*f)(double))
 {
     for(int i = 0; i < rows; i++)
     {
-        for(int j = 0; j < rows; j++)
+        for(int j = 0; j < columns; j++)
         {
             data[i][j] = f(data[i][j]);
         }
