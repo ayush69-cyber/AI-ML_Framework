@@ -14,4 +14,6 @@ add_executable(myproject
     src/Network.cpp
     src/vector.cpp
     src/lin_regression.cpp
+    src/log_regression.cpp
+    src/function.cpp
 )
