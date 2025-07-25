@@ -1,3 +1,0 @@
-/home/ayush_don/Desktop/AI-ML_Framework/build/CMakeFiles/myproject.dir
-/home/ayush_don/Desktop/AI-ML_Framework/build/CMakeFiles/edit_cache.dir
-/home/ayush_don/Desktop/AI-ML_Framework/build/CMakeFiles/rebuild_cache.dir
