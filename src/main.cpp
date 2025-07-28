@@ -6,23 +6,25 @@
 #include <iostream>
 
 int main() {
-LogisticRegression LR(1,2,4,0.1);
-Matrix X(4, 2);
-X.operator()(0,0,0);X.operator()(0,1,0);
-X.operator()(1,0,0);X.operator()(1,1,1);
-X.operator()(2,0,1);X.operator()(2,1,0);
-X.operator()(3,0,1);X.operator()(3,1,1);
-Matrix y_true(4,1);
-y_true(0,0,0);
-y_true(1,0,1);
-y_true(2,0,1);
-y_true(3,0,0);
-Matrix y_predict = LR.predict(X);
-std::cout << "Before Training: \n";
-y_predict.display(); 
-LR.train(X,y_true,1000);
-std::cout << "After Training: \n";
-y_predict = LR.predict(X);
-y_predict.display();
+Matrix m1(3,3);
+m1.fill(1);
+
+Matrix m2(m1);
+
+Matrix m3 (m2);
+
+Matrix input(3,1);
+input.fill(1);
+
+std::vector<Matrix> layers;
+
+layers.push_back(m1);
+layers.push_back(m2);
+layers.push_back(m3);
+
+Network network(layers);
+Matrix output = network.pump(input);
+output.display();
+
 return 0;
 }

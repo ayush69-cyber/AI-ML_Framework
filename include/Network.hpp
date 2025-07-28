@@ -12,4 +12,5 @@ public:
   Network(std::vector<Matrix> layers);
 
   void print();
+  Matrix pump(Matrix input);
 };

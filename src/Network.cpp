@@ -8,3 +8,13 @@ void Network::print() {
     layers.at(i).display();
   }
 }
+
+Matrix Network::pump(Matrix input)
+{
+  Matrix temp(input);
+  for(int i=0;i<layers.size();i++)
+  {
+    temp = layers.at(i)*temp;
+  }
+  return temp;
+}
